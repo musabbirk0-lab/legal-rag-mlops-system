@@ -1,6 +1,4 @@
-Here’s a clean, structured **README.md** for your **Legal Document RAG System with full MLOps** that you can copy-paste into your GitHub repo:
 
----
 
 # Legal Document RAG System
 
@@ -89,35 +87,7 @@ legal-docs-rag/
     └── vstore/
 ```
 
----
 
-## **Installation & Setup**
-
-1. Clone the repo:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/legal-docs-rag.git
-cd legal-docs-rag
-```
-
-2. Build Docker image:
-
-```bash
-docker build -t legal-rag-app ./app
-```
-
-3. Run FastAPI locally:
-
-```bash
-docker run -p 8080:8080 legal-rag-app
-```
-
-4. Access API:
-
-* Upload PDF: `POST /upload`
-* Query: `GET /query?q=<your question>`
-
----
 
 ## **MLOps Notes**
 
@@ -135,11 +105,5 @@ docker run -p 8080:8080 legal-rag-app
 
 ---
 
-## **License**
 
-MIT License
-
----
-
-If you want, I can also **write a super-short “project description” paragraph** for GitHub so it looks neat in your repo preview. Do you want me to do that?
 
