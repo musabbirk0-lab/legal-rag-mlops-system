@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+langchain
+sentence-transformers
+faiss-cpu
+pydantic
+python-multipart
+pdfminer.six
+pytest
+requests
+beautifulsoup4
+python-dotenv
+chromadb
+openai
+apache-airflow==2.7.1
+apache-airflow-providers-cncf-kubernetes
+apache-airflow-providers-http
