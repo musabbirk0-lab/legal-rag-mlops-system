@@ -1,1 +1,35 @@
 
+name: CI/CD
+
+
+on:
+push:
+branches: [ main ]
+
+
+jobs:
+build-and-deploy:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v3
+- name: Set up Python
+uses: actions/setup-python@v4
+with:
+python-version: 3.10
+- name: Install dependencies
+run: |
+pip install -r app/requirements.txt
+- name: Run tests
+run: |
+pytest tests/
+- name: Build Docker image
+run: |
+docker build -t your-dockerhub-username/rag-pdf-app:latest ./app
+- name: Push Docker image
+uses: docker/build-push-action@v4
+with:
+push: true
+tags: your-dockerhub-username/rag-pdf-app:latest
+- name: Deploy to Kubernetes
+run: |
+kubectl apply -f k8s/
