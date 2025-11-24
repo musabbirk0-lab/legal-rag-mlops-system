@@ -1,1 +1,13 @@
 
+apiVersion: v1
+kind: Service
+metadata:
+name: rag-pdf-service
+spec:
+selector:
+app: rag-pdf
+ports:
+- protocol: TCP
+port: 80
+targetPort: 8080
+type: LoadBalancer
