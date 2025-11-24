@@ -97,13 +97,6 @@ legal-docs-rag/
 
 ---
 
-## **Optional Enhancements**
-
-* OCR support for scanned PDFs.
-* Multi-language support for international legal documents.
-* Logging and monitoring with Prometheus/Grafana.
-
----
 
 
 
